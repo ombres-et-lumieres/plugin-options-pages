@@ -29,7 +29,7 @@ function olhk_settings_page()
 						        'Thumbnails settings',
 						        'Thumbnails settings',
 						        'manage_categories',
-						        'olhk_thumbnails',
+						        'thumbnails_settings',
 						        'olhk_thumb_settings_page_html'
 						    );
 
