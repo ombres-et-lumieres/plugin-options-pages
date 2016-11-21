@@ -110,26 +110,22 @@ function olhk_field_galleries_cb($args)
     ?>
     <select id="<?= esc_attr($args['label_for']); ?>" data-custom="<?= esc_attr($args['olhk_custom_data']); ?>" name="olhk_options[<?= esc_attr($args['label_for']); ?>]" >
 
-        <option value="100" <?= isset($options[$args['label_for']]) ? (selected($options[$args['label_for']], '100', false)) : (''); ?>>
-            <?= esc_html('100 px', 'ol_hierarchical_keywords'); ?>
+        <option value="alphabetic" <?= isset($options[$args['label_for']]) ? (selected($options[$args['label_for']], 'alphabetic', false)) : (''); ?>>
+            <?= esc_html('alphabetic', 'ol_hierarchical_keywords'); ?>
         </option>
 
-        <option value="150" <?= isset($options[$args['label_for']]) ? (selected($options[$args['label_for']], '150', false)) : (''); ?>>
-            <?= esc_html('150 px', 'ol_hierarchical_keywords'); ?>
+        <option value="date" <?= isset($options[$args['label_for']]) ? (selected($options[$args['label_for']], 'date', false)) : (''); ?>>
+            <?= esc_html('date', 'ol_hierarchical_keywords'); ?>
         </option>
 
-        <option value="200" <?= isset($options[$args['label_for']]) ? (selected($options[$args['label_for']], '200', false)) : (''); ?>>
-            <?= esc_html('200 px', 'ol_hierarchical_keywords'); ?>
-        </option>
-
-        <option value="250" <?= isset($options[$args['label_for']]) ? (selected($options[$args['label_for']], '250', false)) : (''); ?>>
-            <?= esc_html('250 px', 'ol_hierarchical_keywords'); ?>
+        <option value="personnal" <?= isset($options[$args['label_for']]) ? (selected($options[$args['label_for']], 'personnal', false)) : (''); ?>>
+            <?= esc_html('personnal', 'ol_hierarchical_keywords'); ?>
         </option>
 
     </select>
 
     <p class="description">
-        <?= esc_html('This size will be used on the whole website except on woocommerce, if the plugin is activated.', 'ol_hierarchical_keywords'); ?>
+        <?= esc_html("you can choose to order your galleries by name of the picture 's file, by dates or as you organized them when you build the gallery. This choice is for all the site", 'ol_hierarchical_keywords'); ?>
     </p>
 
 
